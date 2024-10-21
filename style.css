@@ -1,0 +1,94 @@
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Calculator container */
+.calculator-container {
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Calculator layout */
+.calculator {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* History and result display */
+.history, .result {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#history-value {
+    font-size: 25px;
+    color: #aaa;
+    font-weight: 600 ;
+    height: 30px;
+}
+
+#result-value {
+    font-size: 36px;
+    height: 60px;
+    line-height: 60px;
+}
+
+/* Button grid layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    outline: none;
+}
+
+.number, .zero, .dot {
+    background-color: #666;
+}
+
+.operator {
+    background-color: #ff9500;
+}
+
+.equal {
+    background-color: #28a745;
+    grid-column: span 2;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+button:active {
+    transform: scale(0.95);
+}

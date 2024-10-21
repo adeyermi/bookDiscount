@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <!-- History display -->
+            <div class="history">
+                <p id="history-value"></p>
+            </div>
+            <!-- Result display -->
+            <div class="result">
+                <p id="result-value"></p>
+            </div>
+            <!-- Buttons grid -->
+            <div class="buttons">
+                <!-- Row 1 -->
+                <button class="operator" onclick="clearScreen()">C</button>
+                <button class="operator" onclick="deleteNumber()">DEL</button>
+                <button class="operator" onclick="addToHistory('/')">/</button>
+                <button class="operator" onclick="addToHistory('*')">*</button>
+                <!-- Row 2 -->
+                <button class="number" onclick="addToHistory('7')">7</button>
+                <button class="number" onclick="addToHistory('8')">8</button>
+                <button class="number" onclick="addToHistory('9')">9</button>
+                <button class="operator" onclick="addToHistory('-')">-</button>
+                <!-- Row 3 -->
+                <button class="number" onclick="addToHistory('4')">4</button>
+                <button class="number" onclick="addToHistory('5')">5</button>
+                <button class="number" onclick="addToHistory('6')">6</button>
+                <button class="operator" onclick="addToHistory('+')">+</button>
+                <!-- Row 4 -->
+                <button class="number" onclick="addToHistory('1')">1</button>
+                <button class="number" onclick="addToHistory('2')">2</button>
+                <button class="number" onclick="addToHistory('3')">3</button>
+                <button class="dot" onclick="addToHistory('.')">.</button>
+                <button class="zero" onclick="addToHistory('0')">0</button>
+                <button class="equal" onclick="calculate()">=</button>
+ 
+            
+               
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
